@@ -51,10 +51,15 @@ header {
   border-bottom: 1px solid #333333;
   border-width: 80%;
 }
+.border_title{
+ 
+}
 .descr__title {
   text-align: center;
   font-size: 24px;
-  width: 20%;
+  width: 20%; 
+    border: 20px solid transparent;
+  border-left: 20px solid green;
 }
 .descr__block-item {
   width: 100%;

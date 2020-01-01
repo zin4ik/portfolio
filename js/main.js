@@ -26,7 +26,7 @@ jQuery(document).ready(function() {
   $(".carusel_descr").slick({
     centerMode: true,
     centerPadding: "10px",
-    speed: 100,
+    speed: 1000,
     slidesToShow: 1,
     adaptiveHeight: false,
     arrows: false,
