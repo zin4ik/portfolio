@@ -23,7 +23,7 @@ jQuery(document).ready(function() {
   });
 
   //slick slider
-  $(".carusel_descr").slick({
+  $(".55").slick({
     centerMode: true,
     centerPadding: "10px",
     speed: 1000,
@@ -51,5 +51,15 @@ jQuery(document).ready(function() {
         }
       }
     ]
+  });
+  //slick slider
+  $(".Corporate_site__img, .carusel_descr").slick({
+    dots: true,
+    infinite: true,
+    speed: 1000,
+    slidesToShow: 1,
+    centerMode: true,
+    variableWidth: true,
+    arrows: false
   });
 });

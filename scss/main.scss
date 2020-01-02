@@ -51,15 +51,23 @@ header {
   border-bottom: 1px solid #333333;
   border-width: 80%;
 }
-.border_title{
- 
+.triangle_block{
+  border:1px solid #000;
+  
+  width:0px;
+  height:0px;
+  display: flex;
+  flex-flow:row;
+  justify-content: flex-end;
+  align-items: center;
+  border-left:250px solid rgb(57, 211, 238);
+  border-top:120px solid transparent;
+  border-bottom:120px solid transparent; 
 }
 .descr__title {
-  text-align: center;
+  position:relative;
+  left:-120px;
   font-size: 24px;
-  width: 20%; 
-    border: 20px solid transparent;
-  border-left: 20px solid green;
 }
 .descr__block-item {
   width: 100%;
