@@ -1,10 +1,8 @@
 jQuery(document).ready(function() {
   // ф-ция печатной машинки
   $(function() {
-    $(".text-typing").typeIt({
-      strings: [
-        "Привіт. Я front end development. Створюю WEB сайти на замовлення, виправляю, змінюю та доповнюю існуючі сайти."
-      ] // строки выводимые в печать
+    $(".home__txt_p").typeIt({
+      strings: ["I`m web development`s."] // строки выводимые в печать
     });
   });
 
@@ -22,44 +20,43 @@ jQuery(document).ready(function() {
     $("body,html").animate({ scrollTop: top }, 1500);
   });
 
-  //slick slider
-  $(".55").slick({
-    centerMode: true,
-    centerPadding: "10px",
-    speed: 1000,
-    slidesToShow: 1,
-    adaptiveHeight: false,
-    arrows: false,
-    dots: true,
+  $(".about__gadget_blocks").slick({
+    dots: false,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 3,
+    slidesToScroll: 3,
     responsive: [
       {
-        breakpoint: 768,
+        breakpoint: 1024,
         settings: {
-          arrows: false,
-          centerMode: true,
-          // centerPadding: "40px",
-          slidesToShow: 1
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          avtoplay: false,
+          infinite: true,
+          dots: false
+        }
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          dots: true
         }
       },
       {
         breakpoint: 480,
         settings: {
-          arrows: false,
-          centerMode: true,
-          centerPadding: "40px",
-          slidesToShow: 1
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          avtoplay: true,
+          dots: true
         }
       }
+      // You can unslick at a given breakpoint now by adding:
+      // settings: "unslick"
+      // instead of a settings object
     ]
-  });
-  //slick slider
-  $(".Corporate_site__img, .carusel_descr").slick({
-    dots: true,
-    infinite: true,
-    speed: 1000,
-    slidesToShow: 1,
-    centerMode: true,
-    variableWidth: true,
-    arrows: false
   });
 });
