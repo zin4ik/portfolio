@@ -1,0 +1,27 @@
+.zoomscrin{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    position: fixed;
+    /* фиксированное положение */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.8);
+    overflow: scroll;
+
+    .zoom_close{
+        position:absolute;
+        top:15px;
+        right:15px;
+        border:none;
+        background:none;
+        color:white;
+    }
+
+    img{
+        max-width:60%;
+
+    }
+}
