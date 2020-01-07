@@ -60,9 +60,9 @@ body {
     justify-content: center;
     border: 1px solid #cccccc;
 
-    .about__gadget_txt{
+    .about__gadget_txt {
       padding-bottom: 10px;
-      border-bottom:1px solid #cccccc ;
+      border-bottom: 1px solid #cccccc;
     }
 
     .about__gadget_block {
@@ -80,10 +80,9 @@ body {
       max-width: 20%;
       padding: 10px;
 
-      .about__gadget_desc{
+      .about__gadget_desc {
         text-align: center;
       }
-      
     }
 
     .about__gadget_i {
@@ -97,6 +96,50 @@ body {
       border-radius: 150px;
       i {
         font-size: 60px;
+      }
+    }
+  }
+}
+
+#skill {
+  .skill__desc {
+    text-align: center;
+  }
+  .skill__block {
+    .skill__item {
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      width: 150px;
+      height: auto;
+      padding: 5px;
+      margin: 10px;
+      span,
+      a {
+        margin-top: 10px;
+        text-align: center;
+      }
+
+      .fab {
+        font-size: 60px;
+        margin-bottom: 5px;
+        text-align: center;
+
+        &:hover {
+          transition: all 0.5s;
+          transform: scale(1.5);
+        }
+      }
+
+      .fa-html5 {
+        color: #ff3500;
+      }
+      .fa-css3 {
+        color: #0e51a7;
+      }
+      .fa-js-square{
+        color: #dab306;
       }
     }
   }
