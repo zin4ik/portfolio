@@ -5,6 +5,10 @@ jQuery(document).ready(function() {
       strings: ["I`m web development`s."] // строки выводимые в печать
     });
   });
+  //ініціалізація WOW
+  $(function() {
+    new WOW().init();
+  });
 
   //плавный скрол от меню
   $("#menu").on("click", "a", function(event) {
@@ -20,43 +24,15 @@ jQuery(document).ready(function() {
     $("body,html").animate({ scrollTop: top }, 1500);
   });
 
-  $(".about__gadget_blocks").slick({
-    dots: false,
-    infinite: false,
-    speed: 300,
-    slidesToShow: 3,
-    slidesToScroll: 3,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 3,
-          avtoplay: false,
-          infinite: true,
-          dots: false
-        }
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          avtoplay: true,
-          dots: true
-        }
-      }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
-    ]
+  //scroll
+  $(window).scroll(function() {
+    if ($(window).scrollTop() > 75) {
+      console.log("hello");
+      $(".header__nav").css("background-color", "rgba(36, 88, 122, 0.9)");
+      $(".header__link").css("color", "#ffffff");
+    } else {
+      $(".header__nav").css("background-color", "rgba(36, 88, 122, 0.2)");
+      $(".header__link").css("color", "#333333");
+    }
   });
 });

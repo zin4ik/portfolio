@@ -1,3 +1,8 @@
+.parallax-window {
+  min-height: 400px;
+  background: transparent;
+}
+
 .header {
   width: 100%;
   display: -webkit-box;
@@ -36,7 +41,7 @@
 
 .header__link {
   text-decoration: none;
-  color: #00733c;
+  color: #000000;
   text-transform: uppercase;
   font-weight: bold;
 }
@@ -70,6 +75,11 @@ body {
 .wrapp {
   width: 90%;
   margin: 0 auto;
+}
+
+.desc_block {
+  font-size: 18px;
+  font-weight: 400;
 }
 
 #home {
@@ -201,6 +211,37 @@ body {
   text-align: center;
 }
 
+#skill .skill__block .skill__basic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  border-bottom: 1px solid #cccccc;
+}
+
+#skill .skill__block .skill_auxiliary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row;
+          flex-flow: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 #skill .skill__block .skill__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -209,13 +250,13 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-flow: column;
           flex-flow: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 150px;
+  width: 200px;
   height: auto;
   padding: 5px;
   margin: 10px;

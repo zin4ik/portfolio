@@ -1,4 +1,4 @@
-//@import "parallax";
+@import "parallax";
 @import "color";
 @import "header";
 @import "footer";
@@ -20,6 +20,11 @@ body {
 // .main section {
 //   padding: 20px 5px;
 // }
+
+.desc_block{
+  font-size: 18px;
+  font-weight: 400;
+}
 #home {
   display: flex;
   flex-flow: column;
@@ -101,17 +106,32 @@ body {
   }
 }
 
+
+
 #skill {
   .skill__desc {
     text-align: center;
   }
   .skill__block {
+    .skill__basic {
+      display: flex;
+      flex-flow: row;
+      justify-content: space-around;
+      align-items: flex-start;
+      border-bottom: 1px solid #cccccc;
+    }
+    .skill_auxiliary{
+      display: flex;
+      flex-flow: row;
+      justify-content: space-around;
+      align-items: center;
+    }
     .skill__item {
       display: flex;
       flex-flow: column;
-      justify-content: center;
+      justify-content: flex-start;
       align-items: center;
-      width: 150px;
+      width: 200px;
       height: auto;
       padding: 5px;
       margin: 10px;
@@ -138,7 +158,7 @@ body {
       .fa-css3 {
         color: #0e51a7;
       }
-      .fa-js-square{
+      .fa-js-square {
         color: #dab306;
       }
     }
