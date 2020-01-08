@@ -35,4 +35,25 @@ jQuery(document).ready(function() {
       $(".header__link").css("color", "#333333");
     }
   });
+
+  //zoom
+  $(".zoom_close").on("click", function() {
+    $(".zoomscrin").removeClass("zoom_on");
+    $(".zoomscrin").addClass("zoom_off");
+  });
+
+  $(".zoom_item").on("click", function() {
+    $("#zoom_img").empty();
+    var itemAttr = $(this).attr("data-img");
+    if (itemAttr !== undefined) {
+      $("#zoom_img").append(
+        '<img id="active_img_zoom " src="' + itemAttr + '" alt="/">'
+      );
+
+      $(".zoomscrin").removeClass("zoom_off");
+      $(".zoomscrin").addClass("zoom_on");
+    } else {
+      false;
+    }
+  });
 });

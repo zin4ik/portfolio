@@ -1,27 +1,38 @@
-.zoomscrin{
+.zoomscrin {
+  position: fixed;
+  /* фиксированное положение */
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  overflow: scroll;
+  transition: all 0.8s;
+
+  .zoom_close {
+    position: fixed;
+    top: 15px;
+    right: 25px;
+    border: none;
+    background: none;
+    color: white;
+  }
+
+  #zoom_img{
+      width:50%;
+  }
+  img {
+    width: 100%;
+  }
+}
+.zoom_off {
+  display: none;  
+  transform: scale(0);
+}
+.zoom_on {
+    transform: scale(1);
     display: flex;
     flex-flow: column;
-    align-items: center;
-    position: fixed;
-    /* фиксированное положение */
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.8);
-    overflow: scroll;
-
-    .zoom_close{
-        position:absolute;
-        top:15px;
-        right:15px;
-        border:none;
-        background:none;
-        color:white;
-    }
-
-    img{
-        max-width:60%;
-
-    }
+    align-items: center; 
 }
+
