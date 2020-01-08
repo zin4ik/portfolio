@@ -98,8 +98,6 @@
 
 .zoom_off {
   display: none;
-  -webkit-transition: all 0.8s;
-  transition: all 0.8s;
   -webkit-transform: scale(0);
           transform: scale(0);
 }
@@ -107,8 +105,6 @@
 .zoom_on {
   -webkit-transform: scale(1);
           transform: scale(1);
-  -webkit-transition: all 0.8s;
-  transition: all 0.8s;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
