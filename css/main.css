@@ -145,6 +145,8 @@ body {
 }
 
 .main section {
+  margin-top: 50px;
+  border-top: 1px solid #cccccc;
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -392,5 +394,9 @@ body {
 
 #portfolio #scene {
   min-height: 300px;
+}
+
+#contact {
+  background-color: #dfdfdf;
 }
 /*# sourceMappingURL=main.css.map */
