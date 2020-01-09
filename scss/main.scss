@@ -26,6 +26,10 @@ body {
   font-size: 18px;
   font-weight: 400;
 }
+.main section{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
 #home {
   display: flex;
   flex-flow: column;
@@ -188,4 +192,7 @@ body {
   #scene {
     min-height: 300px;
   }
+}
+#contact{
+
 }

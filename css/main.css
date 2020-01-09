@@ -68,6 +68,15 @@
   border-top: 100px solid rgba(255, 137, 64, 0.9);
 }
 
+.footer {
+  width: 100%;
+  background: #000000;
+  padding: 10px 0;
+  margin-top: 50px;
+  color: white;
+  text-align: center;
+}
+
 .zoomscrin {
   position: fixed;
   /* фиксированное положение */
@@ -133,6 +142,11 @@ body {
 .desc_block {
   font-size: 18px;
   font-weight: 400;
+}
+
+.main section {
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 #home {
