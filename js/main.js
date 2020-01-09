@@ -10,6 +10,9 @@ jQuery(document).ready(function() {
     new WOW().init();
   });
 
+  // var portfolioParalax = $("#scene");
+  // var parallaxIns = new Parallax(portfolioParalax);
+
   //плавный скрол от меню
   $("#menu").on("click", "a", function(event) {
     //отменяем стандартную обработку нажатия по ссылке

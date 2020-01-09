@@ -86,6 +86,13 @@
   border: none;
   background: none;
   color: white;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.zoomscrin .zoom_close:hover {
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
 }
 
 .zoomscrin #zoom_img {
@@ -98,13 +105,9 @@
 
 .zoom_off {
   display: none;
-  -webkit-transform: scale(0);
-          transform: scale(0);
 }
 
 .zoom_on {
-  -webkit-transform: scale(1);
-          transform: scale(1);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -341,5 +344,39 @@ body {
 
 #skill .skill__block .skill__item .fa-js-square {
   color: #dab306;
+}
+
+#portfolio .portfolio__block__all {
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+#portfolio .potfolio__block_img {
+  border: 1px solid #cccccc;
+  width: 29%;
+  overflow: hidden;
+  margin: 10px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+#portfolio .potfolio__block_img:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  background-color: #cccccc;
+  opacity: 0.5;
+}
+
+#portfolio #scene {
+  min-height: 300px;
 }
 /*# sourceMappingURL=main.css.map */

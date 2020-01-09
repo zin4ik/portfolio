@@ -22,7 +22,7 @@ body {
 //   padding: 20px 5px;
 // }
 
-.desc_block{
+.desc_block {
   font-size: 18px;
   font-weight: 400;
 }
@@ -107,8 +107,6 @@ body {
   }
 }
 
-
-
 #skill {
   .skill__desc {
     text-align: center;
@@ -121,7 +119,7 @@ body {
       align-items: flex-start;
       border-bottom: 1px solid #cccccc;
     }
-    .skill_auxiliary{
+    .skill_auxiliary {
       display: flex;
       flex-flow: row;
       justify-content: space-around;
@@ -163,5 +161,31 @@ body {
         color: #dab306;
       }
     }
+  }
+}
+
+#portfolio {
+  .portfolio__block__all {
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+  }
+
+  .potfolio__block_img {
+    border: 1px solid #cccccc;
+    width: 29%;
+    overflow: hidden;
+    margin: 10px;
+    transition: all 0.5s;
+    &:hover {
+      transform: scale(1.05);
+      background-color: #cccccc;
+      opacity: 0.5;
+    }
+  }
+
+  #scene {
+    min-height: 300px;
   }
 }
