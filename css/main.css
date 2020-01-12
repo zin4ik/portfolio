@@ -404,6 +404,9 @@ body {
 }
 
 #contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   background-color: #dfdfdf;
 }
 /*# sourceMappingURL=main.css.map */

@@ -2,7 +2,7 @@
 $recepiant = "zin4ik@i.ua";
 $sitename = "my portfolio";
 
-$name = trim($_POST['name'];
+$name = trim($_POST['name']);
 $phone = trim($_POST['phone']);
 $email = trim($_POST['email']);
 $text = trim($_POST['text']);
