@@ -95,8 +95,8 @@
   border: none;
   background: none;
   color: white;
-  -webkit-transition: all .5s;
-  transition: all .5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .zoomscrin .zoom_close:hover {
@@ -106,6 +106,8 @@
 
 .zoomscrin #zoom_img {
   width: 50%;
+  border: 1px solid gold;
+  padding: 10px;
 }
 
 .zoomscrin img {
@@ -149,6 +151,11 @@ body {
   border-top: 1px solid #cccccc;
   padding-top: 50px;
   padding-bottom: 50px;
+}
+
+.main section:first-child {
+  margin-top: 0;
+  padding-top: 0;
 }
 
 #home {

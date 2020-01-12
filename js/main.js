@@ -59,4 +59,15 @@ jQuery(document).ready(function() {
       false;
     }
   });
+
+  $("#form").submit(function() {
+    $.ajax({
+      type: "POST",
+      url: "/php/mail.php",
+      data: $(this).serialize()
+    }).done(function() {
+      alert("OK");
+    });
+    return false;
+  });
 });

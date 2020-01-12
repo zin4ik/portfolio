@@ -167,7 +167,7 @@
 
         <div class="skill__github skill__item">
           <i class="fab fa-github"></i>
-          <a href="http://https://github.com/zin4ik">GitHub</a>
+          <a href="https://github.com/zin4ik">GitHub</a>
         </div> <!-- /.skill___github-->
 
 
@@ -187,13 +187,7 @@
         <h3 class="portfolio__title">My portfolio</h3>
         <div class="portfolio__block">
 
-          <div class="zoomscrin zoom_off" >
-            <button class="zoom_close">
-              <i class="fas fa-times"></i>
-            </button>
-            <div id="zoom_img"></div>                      
-          </div>
-          <!-- /zoomscrin -->
+          
           <div class="portfolio__block__all  ">
 
           <div data-speed="0.20" class="potfolio__block_img zoom_item parallax-window" data-parallax="scroll" data-image-src="/img/portf3_f.png" data-img="/img/portf3_1.png">            
@@ -207,7 +201,13 @@
       </div>
 
     </div> <!-- /.portfolio__block__all -->
-          
+          <div class="zoomscrin zoom_off" >
+            <button class="zoom_close">
+              <i class="fas fa-times"></i>
+            </button>
+            <div id="zoom_img"></div>                      
+          </div>
+          <!-- /zoomscrin -->
         </div> <!-- /portfolio__block -->
         
       </section>
@@ -215,7 +215,14 @@
 
       <section class="contact wrapp" id="contact">
         <h3 class="contact_item">
-          Contact
+          <form action="" id="form">
+            <input type="text" name="user" placeholder="Your name" required>
+            <input type="text" name="phone" placeholder="Your phone" required>
+            <input type="email" name="email" placeholder="Your email" required>
+            <textarea name="text" id="" cols="30" rows="10"></textarea>
+            <button type="submit" id="btn_form">push</button>
+
+          </form>
         </h3>
         
       </section>
@@ -224,7 +231,7 @@
 
     <footer class="footer">
       <div class="wrapp">
-        <h5>Zinchenko Segiy 2020</h5>
+        <h5>Zinchenko Sergiy 2020</h5>
       </div>
     </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>

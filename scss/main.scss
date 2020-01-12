@@ -26,12 +26,20 @@ body {
   font-size: 18px;
   font-weight: 400;
 }
-.main section{
+.main section {
   margin-top: 50px;
   border-top: 1px solid #cccccc;
   padding-top: 50px;
   padding-bottom: 50px;
+
+  &:first-child {
+    margin-top: 0;
+    // border-top: 1px solid #cccccc;
+    padding-top: 0;
+    // padding-bottom: 50px;
+  }
 }
+
 #home {
   display: flex;
   flex-flow: column;
@@ -184,6 +192,7 @@ body {
     overflow: hidden;
     margin: 10px;
     transition: all 0.5s;
+
     &:hover {
       transform: scale(1.05);
       background-color: #cccccc;
@@ -195,6 +204,6 @@ body {
     min-height: 300px;
   }
 }
-#contact{
-background-color: #dfdfdf;
+#contact {
+  background-color: #dfdfdf;
 }
