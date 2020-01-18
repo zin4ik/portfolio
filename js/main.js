@@ -60,13 +60,17 @@ jQuery(document).ready(function() {
     }
   });
 
-  $("#form").submit(function() {
+  $("#form").submit(function(e) {
+    e.preventDefault();
+    var form_data = $(this).serialize();
     $.ajax({
       type: "POST",
       url: "/php/mail.php",
-      data: $(this).serialize()
-    }).done(function() {
-      alert("OK");
+      data: form_data,
+      success: function(data) {
+        // сoбытиe пoслe удaчнoгo oбрaщeния к сeрвeру и пoлучeния oтвeтa
+        alert("все ок"); // пoкaжeм eё тeкст
+      }
     });
     return false;
   });
