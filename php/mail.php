@@ -10,7 +10,8 @@ $message="Імя: $name,\n Телефон: $phone,\n Email: $email, \n $text";
 $pageTitle="Заявка з сайта $sitename";
 
 $headers  = "Content-type: text/html; charset=windows-1251 \r\n"; 
-$headers .= "From: От кого письмо <from@example.com>\r\n"; 
-$headers .= "Reply-To: reply-to@example.com\r\n"; 
+// $headers .= "From: От кого письмо <from@example.com>\r\n"; 
+// $headers .= "Reply-To: reply-to@example.com\r\n"; 
+echo "$name";
 mail($recepiant,$sitename,$message,$headers);
 ?>
